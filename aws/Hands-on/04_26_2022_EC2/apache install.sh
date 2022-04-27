@@ -146,7 +146,7 @@ echo "<html>
 </html>" > /var/www/html/index.html
 # start apache server
 systemctl start httpd
-systemctl enable httpd
+
 
 
 20. Review and launch the EC2 Instance
