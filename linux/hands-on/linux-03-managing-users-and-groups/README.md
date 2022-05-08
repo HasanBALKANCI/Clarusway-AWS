@@ -34,7 +34,7 @@ sudo su -
 pwd
 ```
 ​
-- who.
+- who
 ​
 ```bash
 exit
@@ -42,14 +42,14 @@ who
 who # open a new shell and retry who command to see the users who logged in.
 ```
 ​
-- w.
+- w
 ​
 ```bash
 w
 who
 ```
 ​
-- id.
+- id
 ​
 ```bash
 id
