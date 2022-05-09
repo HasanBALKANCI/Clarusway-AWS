@@ -247,4 +247,12 @@ NOTE MYSELF:
     6. export ---> env variable creats
     7. set ---> env variables, shell variables and linux functions is demonstrated.
     8. unset ---> it deletes environmnet and shell variables. 
+    9. enviroment degisken sadece export komutuyla yapilir.
+    enviroment degiskeni gormek icin :
+        printenv
+        env
+        set | grep
+    shel degiskeni gormek icin:
+        set | grep
+    10. 
 
