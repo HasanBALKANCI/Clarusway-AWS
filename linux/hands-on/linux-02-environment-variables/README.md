@@ -270,6 +270,9 @@ NOTE MYSELF:
           ./tets.sh 
           .bashrc (tum env gecerli olmasini saglar)
           printenv PATH
+          whereis ls(user local bini tariyor)
+          PATH=abc (yolu bozuyoruz, path le ulasilan doyalar veicindeki komutlar calismiyor)
+          
 
     12. VIM editorde i insert mod, o insert mod ve direk alt satira gecer.
 
