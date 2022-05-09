@@ -250,9 +250,28 @@ NOTE MYSELF:
     9. enviroment degisken sadece export komutuyla yapilir.
     enviroment degiskeni gormek icin :
         printenv
-        env
+        echo $
         set | grep
     shel degiskeni gormek icin:
         set | grep
-    10. 
+        echo $
+        
+    10. env ---> toplu gösterir, tekli sorgusu yok.
+    11. How to write a script in Linux:
+         [ec2-user@ip-172-31-23-167 test]$ vi tets.sh
+          ec2-user@ip-172-31-23-167 test]$ cat test.sh
+          cat: test.sh: No such file or directory
+          [ec2-user@ip-172-31-23-167 test]$ ls
+          tets.sh
+          [ec2-user@ip-172-31-23-167 test]$ cat tets.sh 
+          echo "Welcome to lesson!"
+          [ec2-user@ip-172-31-23-167 test]$ 
+          chmod +x test.sh (artik script dosyasi oldu)
+          ./tets.sh 
+          .bashrc (tum env gecerli olmasini saglar)
+          printenv PATH
+
+    12. VIM editorde i insert mod, o insert mod ve direk alt satira gecer.
+
+
 
