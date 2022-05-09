@@ -193,3 +193,14 @@ NOTE TO MYSELF:
     2. !! (bang bang) bir önceki komutu calistir
     3. sudo su superuser yapar
     4. su user1 o kullaniciyo super user yapar
+    5. passwd user2 (it allows user2 to have password)
+    6. cat /etc/passwd (it allows you to see all user in your computer)
+    7. cd /home
+        ls (kullanici bilgilerini görururz)
+    8. cat login.defs (kullanici login, passwd bilgilerini duzenleyebiliriz)
+    9. user in yetkisi kendi konumu altinaki dosyalarda, ust dosyalar icin sudo gerekli
+    10. sudo useradd -m -d /home/superuser6 user6
+        ec2-user  superuser6  user1  user2  user3  user5
+    11. user2:x:1002:1002::/home/user2:/bin/bash 
+                         :: (comment icin kullanilir arasina yazilabilir)
+    12. cat /etc/shadow (kullanici sifreleri encryted olarak gösterilir)
