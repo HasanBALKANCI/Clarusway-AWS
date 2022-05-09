@@ -278,6 +278,10 @@ NOTE MYSELF:
 
 
     12. VIM editorde i insert mod, o insert mod ve direk alt satira gecer.
+    13. " ", ' ', \ lullanimi:
+        " " --> boslugu kabul eder, $ gibi özle karakterleri kendi anlamiyla kabul eder.
+        ' ' ---> herseyi icinde normal kabul eder.
+        \  ---> özel anlami görmezden gel
 
 
 
