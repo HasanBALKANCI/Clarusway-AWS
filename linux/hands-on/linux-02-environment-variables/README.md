@@ -241,3 +241,8 @@ How to add space between variable names:
 NOTE MYSELF:
     1. printenv HOME = echo $HOME
     2. env HOME is not run. Because env demonstrate all env variables.
+    3. cd ---> (direct me to) HOME
+    4. ~ means HOME
+    5. cd /  ---> root
+    6. export ---> env variable creats
+    
