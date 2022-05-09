@@ -268,11 +268,13 @@ NOTE MYSELF:
           [ec2-user@ip-172-31-23-167 test]$ 
           chmod +x test.sh (artik script dosyasi oldu)
           ./tets.sh 
-          .bashrc (tum env gecerli olmasini saglar)
+          .bashrc (tum env gecerli olmasini saglar, env variable icine kaydedilmeli)
           printenv PATH
           whereis ls(user local bini tariyor)
           PATH=abc (yolu bozuyoruz, path le ulasilan doyalar veicindeki komutlar calismiyor)
-          
+          sudo cp tets.sh /usr/bin (artik komut dosyasina eklendi)
+          tets.sh (artik clisir, yol belirtmeye gerek kalmadi)
+
 
     12. VIM editorde i insert mod, o insert mod ve direk alt satira gecer.
 
