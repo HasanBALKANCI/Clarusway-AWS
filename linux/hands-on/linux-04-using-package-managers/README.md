@@ -204,3 +204,8 @@ NOTE TO MYSELF:
     11. user2:x:1002:1002::/home/user2:/bin/bash 
                          :: (comment icin kullanilir arasina yazilabilir)
     12. cat /etc/shadow (kullanici sifreleri encryted olarak gösterilir)
+    13. groups (kullanicinin dahil oldugu gruplari gösterir)
+    14. sudo groupadd linux (thhis commands allows you to create nnew group)
+    15. cat /etc/group (it indicates group )
+    16. sudo usermod -a -G linux ec2-user (ec2-user u birde linux grubuna ekle, -a koymadan yaparsak diger tum gruplardan cikar)
+    17. sudo groupmod -n my-linux linux (this commands change name of group)
