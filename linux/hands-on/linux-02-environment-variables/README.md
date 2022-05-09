@@ -237,3 +237,7 @@ How to add space between variable names:
         2.Use double quotes # Keeping $ as a special character, ignores other special characters
         3.Use \
         
+
+NOTE MYSELF:
+    1. printenv HOME = echo $HOME
+    2. env HOME is not run. Because env demonstrate all env variables.
