@@ -187,3 +187,9 @@ sudo yum list git
 sudo yum update git -y
 git --version
 ```
+
+NOTE TO MYSELF:
+    1. Users: root, normal, such as ec2 (program, script etc.)
+    2. !! (bang bang) bir önceki komutu calistir
+    3. sudo su superuser yapar
+    4. su user1 o kullaniciyo super user yapar
