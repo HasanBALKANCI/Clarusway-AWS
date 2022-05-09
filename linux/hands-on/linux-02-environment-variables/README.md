@@ -245,4 +245,6 @@ NOTE MYSELF:
     4. ~ means HOME
     5. cd /  ---> root
     6. export ---> env variable creats
-    
+    7. set ---> env variables, shell variables and linux functions is demonstrated.
+    8. unset ---> it deletes environmnet and shell variables. 
+
