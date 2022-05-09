@@ -274,6 +274,7 @@ NOTE MYSELF:
           PATH=abc (yolu bozuyoruz, path le ulasilan doyalar veicindeki komutlar calismiyor)
           sudo cp tets.sh /usr/bin (artik komut dosyasina eklendi)
           tets.sh (artik clisir, yol belirtmeye gerek kalmadi)
+          export PATH=$PATH:/home/ec2-user/test
 
 
     12. VIM editorde i insert mod, o insert mod ve direk alt satira gecer.
