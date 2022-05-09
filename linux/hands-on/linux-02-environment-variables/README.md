@@ -282,6 +282,7 @@ NOTE MYSELF:
         " " --> boslugu kabul eder, $ gibi özle karakterleri kendi anlamiyla kabul eder.
         ' ' ---> herseyi icinde normal kabul eder.
         \  ---> özel anlami görmezden gel
+    
 
 
 
