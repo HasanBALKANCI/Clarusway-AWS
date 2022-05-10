@@ -69,7 +69,7 @@ cd /usr/share/nginx/html
 
 ls
 
-sudo chmod -R 777 /usr/share/nginx/html
+sudo chmod -R 777 /usr/share/nginx/html # -R allows this file and files which are under this file give auterozition
 
 7. Remove existing `index.html`.
 
