@@ -9,7 +9,7 @@ app = Flask(__name__)
 # to the 'user' variable and sent that user name into the html file. If it doesn't have any parameter, warning massage is raised
 @app.route('/')
 def home():
-    return render_template('main.html', name='Vincenzo')
+    return render_template('main.html', name='Hasan')
 
 # Write a function named `greet` which uses template file named `greet.html` given under `templates` folder
 @app.route('/greet', methods=['GET'])
