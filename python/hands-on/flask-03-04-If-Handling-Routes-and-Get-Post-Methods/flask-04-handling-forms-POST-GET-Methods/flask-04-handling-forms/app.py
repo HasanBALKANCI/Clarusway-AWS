@@ -35,7 +35,7 @@ def login():
         else:
             return render_template('login.html', user=user_name.title(), control = True)
     else:
-        return render_template('login.html', control = True)
+        return render_template('login.html', control = False)
 
 
 # Add a statement to run the Flask application which can be reached from any host on port 80.
