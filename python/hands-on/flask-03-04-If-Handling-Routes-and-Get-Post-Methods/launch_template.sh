@@ -245,3 +245,6 @@ Number of Instance : 1
 44. Go to `Instance Menu` and show recently created EC2 instance.
 
 45. Copy EC2's `Public IP`, paste it in a browser and show `nginx` webpage with custom image.
+
+Note to self:
+    1. Dont forget adding subnnet.
