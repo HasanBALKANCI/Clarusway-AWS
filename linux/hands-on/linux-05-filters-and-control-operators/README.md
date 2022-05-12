@@ -1,4 +1,4 @@
-# Hands-on Linux-05 : Filters and Control Operators
+## Hands-on Linux-05 : Filters and Control Operators
 ​
 Purpose of the this hands-on training is to teach the students how to use filters and control operators in Linux.
 ​
