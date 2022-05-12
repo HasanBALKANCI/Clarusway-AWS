@@ -103,10 +103,8 @@ cat temp.txt
 ```bash
 cat > tennis.txt
 ​
-Amelie Mauresmo, Fra
-Justine Henin, BEL
-Serena Williams, USA
-Venus Williams, USA
+
+
 ```
 >**press ctrl+d for EOF**
 ​
