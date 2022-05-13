@@ -102,6 +102,9 @@ cat temp.txt
 ​
 ```bash
 cat > tennis.txt
+AMelia,Mauresma, Fra
+Justine, Heinen, BAE
+Hasan, Jhon, Willems
 ​
 
 
@@ -170,6 +173,7 @@ cat clarusway.txt
 ​
 ```bash
 cat clarusway.txt | tr aer QAZ
+# it is not permenantly changed.
 ```
 ​
 - Write the content of count.txt on the same line.
@@ -344,6 +348,7 @@ EOF
 ​
 ```bash
 ********************************
+countries.csv| tail -4|sort | uniq | tee deneme.txt
 ```
 ## Part 2 - Using Control Operators
 ​
