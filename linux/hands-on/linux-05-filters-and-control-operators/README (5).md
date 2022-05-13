@@ -19,6 +19,7 @@ At the end of the this hands-on training, students will be able to;
 ## Part 1 - sed command
 
 - Sed is a stream editor. A stream editor is used to perform a lot of function on a file like searching, find and replace, insertion or deletion.
+- Sed make file change, but this changing is seen only output, we cant change original file.
 
 - Create a folder and name it `sed-awk-command`.
 
