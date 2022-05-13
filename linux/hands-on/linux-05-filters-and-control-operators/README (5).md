@@ -133,7 +133,7 @@ Linux is free. ubuntu is good. ubuntu is hope.
 We can limit the sed command to replace the string on a specific line number. The following command only replaces the second line.
 
 ```bash
-sed '2 s/linux/ubuntu/ig' sed.txt
+sed '2 s/linux/ubuntu/ig' sed.txt 
 ```
 
 **Output:**
