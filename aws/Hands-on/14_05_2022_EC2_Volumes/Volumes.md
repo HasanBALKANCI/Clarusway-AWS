@@ -329,3 +329,9 @@ ls  /mnt/mp3/
 ```
 
 # NOTE: You can use "sudo mount -a" to mount volumes and partitions after editing fstab file without rebooting.
+
+NOTE to SELF
+    1. Volume and EC2 must be same AZ.
+    2. Create a new volume
+    3. Action and attach
+    4. After attach the satatus of volume will be 'in use'
