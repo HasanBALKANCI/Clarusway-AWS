@@ -60,7 +60,7 @@ sudo file -s /dev/xvdf
 ```
 - if not formatted, format the new volume
 ```
-sudo mkfs -t ext4 /dev/xvdf
+sudo mkfs -t ext4 /dev/xvdf   # it is for formating
 ```
 - check the format of the volume again after formatting
 ```
@@ -337,5 +337,6 @@ NOTE to SELF
     4. After attach the satatus of volume will be 'in use'
     5. Volume was created, atached. But it is not mounted yet. If you check 'df -h' you cant see new volume until it is mounted
     6. sudo file -s /dev/xvdf (/dev/xvdf  means voleme's name)
-       /dev/xvdf: data (it is not mounted yet)
+       /dev/xvdf: data (it is not mounted yet. It is not formated)
+    7. 
     6. For mounting
