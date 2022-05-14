@@ -335,5 +335,7 @@ NOTE to SELF
     2. Create a new volume
     3. Action and attach
     4. After attach the satatus of volume will be 'in use'
-    5. Volume was created, atached. But it is not mounted yet.
+    5. Volume was created, atached. But it is not mounted yet. If you check 'df -h' you cant see new volume until it is mounted
+    6. sudo file -s /dev/xvdf (/dev/xvdf  means voleme's name)
+       /dev/xvdf: data (it is not mounted yet)
     6. For mounting
