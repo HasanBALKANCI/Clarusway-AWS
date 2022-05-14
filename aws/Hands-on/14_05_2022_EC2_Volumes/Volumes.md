@@ -358,6 +358,11 @@ NOTE to SELF
         But formating is not changed.
     10. 1GIB = 1024 Mb
         1G   = 1000 Mb
-    11. 
+
+    11. Aim to partion disk
+        - Creat new volume in same AZ
+        - Attach root-volume
+        - sudo fdisk /dev/xvdg  (xvdg is last creating volume. f,g ...)
+        
 
    
