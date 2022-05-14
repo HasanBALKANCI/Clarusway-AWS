@@ -242,7 +242,7 @@ df -h
 ```
 - extend the partition 2 and occupy all newly available space.  Warning for space !!!!!!
 ```
-sudo growpart /dev/xvdg 2
+sudo growpart /dev/xvdg2
 ```
 - ​show the real capacity used currently at mounting path, updated capacity should be shown.
 ```
@@ -374,6 +374,8 @@ NOTE to SELF
         - Select volume
         - Action/Modify/ size :6
         - Which partion does resize?
+    13. When you modify your root-volume you mast do same thing like partiondisk.
+        
 
 
 
