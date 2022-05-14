@@ -64,7 +64,8 @@ sudo mkfs -t ext4 /dev/xvdf   # it is for formating
 ```
 - check the format of the volume again after formatting
 ```
-sudo file -s /dev/xvdf
+sudo file -s /dev/xvdf 
+# if you run ' df -h ' you cant see new volume because of formating
 ```
 - create a mounting point path for new volume (volume-1)
 ```
