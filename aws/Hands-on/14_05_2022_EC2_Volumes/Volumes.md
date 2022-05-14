@@ -363,6 +363,11 @@ NOTE to SELF
         - Creat new volume in same AZ
         - Attach root-volume
         - sudo fdisk /dev/xvdg  (xvdg is last creating volume. f,g ...)
-        
+        - partion number (1)
+        - Where does your sector start (you can divide your volume size)
+        - (2048)
+        - +2G (0-2048+2..)
+
+
 
    
