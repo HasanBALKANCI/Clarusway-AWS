@@ -70,6 +70,7 @@ sudo file -s /dev/xvdf
 - create a mounting point path for new volume (volume-1)
 ```
 sudo mkdir /mnt/mp1
+# if you run 'df -h' you can see volume (/dev/xvda1)
 ```
 - mount the new volume to the mounting point path
 ```
