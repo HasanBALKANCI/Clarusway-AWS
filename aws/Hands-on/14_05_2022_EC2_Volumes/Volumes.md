@@ -375,7 +375,8 @@ NOTE to SELF
         - Action/Modify/ size :6
         - Which partion does resize?
     13. When you modify your root-volume you mast do same thing like partiondisk.
-        
+    14. Volume size cant be small.
+
 
 
 
