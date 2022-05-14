@@ -367,6 +367,13 @@ NOTE to SELF
         - Where does your sector start (you can divide your volume size)
         - (2048)
         - +2G (0-2048+2..)
+        - format
+        -create directory
+        - mounting
+    12. Modify partion disk
+        - Select volume
+        - Action/Modify/ size :6
+        - Which partion does resize?
 
 
 
