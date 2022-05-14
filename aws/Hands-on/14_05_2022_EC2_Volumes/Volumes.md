@@ -83,6 +83,7 @@ lsblk
 - show the available space, on the mounting point path
 ```
 df -h
+# you can see 'dev/xvdf       4.8G   20M  4.6G   1% /mnt/mp1'
 ```
 - check if there is data on it or not.
 ```
