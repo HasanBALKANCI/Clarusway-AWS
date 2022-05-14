@@ -339,7 +339,7 @@ NOTE to SELF
     2. Create a new volume
         When you create volume via  EC2 service sub-menu, you can choose same subnet. Because your instance and volumes must be in same AZ.
     3. Action and attach
-        
+        When you create and attach additional volume (EBS) you must choose same subnet with root-volume.
     4. After attach the satatus of volume will be 'in use'
     5. Volume was created, atached. But it is not mounted yet. If you check 'df -h' you cant see new volume until it is mounted
     6. sudo file -s /dev/xvdf (/dev/xvdf  means voleme's name)
