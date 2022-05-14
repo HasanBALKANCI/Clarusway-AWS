@@ -335,3 +335,5 @@ NOTE to SELF
     2. Create a new volume
     3. Action and attach
     4. After attach the satatus of volume will be 'in use'
+    5. Volume was created, atached. But it is not mounted yet.
+    6. For mounting
