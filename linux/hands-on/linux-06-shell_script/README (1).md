@@ -41,7 +41,7 @@ This is done specifying `#!/bin/bash` on the first line, meaning that the script
 - After to save the above content, we need to make the script executable.
 
 ```bash
-chmod +x basic.sh
+chmod +x basic.sh # it makes commnands executable
 ```
 
 - Then we can execute the `basic.sh`. To execute basic.sh, it is required to add `./` beginning of the `basic.sh`. `./` means we're calling something in the current working directory. We have to specify the path for executables if they're outside our $PATH variable.
