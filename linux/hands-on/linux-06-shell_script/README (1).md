@@ -259,7 +259,7 @@ echo "All the Parameters are $@"
 echo "Total Number of Parameters : $#"
 echo "$RANDOM is a random number"
 echo "The current line number is $LINENO"
-```
+```# when you use 10 and greater num you must write like{10}.
 
 - Make the script executable. 
 
