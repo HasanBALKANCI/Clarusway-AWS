@@ -92,7 +92,7 @@ pwd # This is an inline comment
 cat << EOF
 Welcome to the Linux Lessons.
 This lesson is about the shell scripting
-EOF
+EOF # multilane comments
 ```
 
 - Update the `basic.sh`.
