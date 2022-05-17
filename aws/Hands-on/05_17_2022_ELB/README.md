@@ -279,4 +279,6 @@ Successfully created load balancer!
 - Explain the monitoring dashboard of ALB.
 
 Note to Self:
-1. 
+    1. When you create target group you add heathcheck.
+    2. Intervel : per default(30) seconds make healthcheck (/>index.html)
+    3. if Ardisik 5 checks is succesed index is heathy
