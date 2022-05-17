@@ -277,3 +277,6 @@ Successfully created load balancer!
 ```
 
 - Explain the monitoring dashboard of ALB.
+
+Note to Self:
+1. 
