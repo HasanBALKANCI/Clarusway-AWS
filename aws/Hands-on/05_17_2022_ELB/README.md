@@ -279,6 +279,12 @@ Successfully created load balancer!
 - Explain the monitoring dashboard of ALB.
 
 Note to Self:
+    Port                    : Traffic port
+    Healthy treshold        : 5
+    Unhealthy treshold      : 2
+    Timeout                 : 5 seconds
+    Interval                : 10 seconds
+    Succes codes            : 200
     1. When you create target group you add heathcheck.
     2. Intervel : per default(30) seconds make healthcheck (/>index.html)
     3. if ARDISIK 5 checks is succesed index is heathy else not healthy.
