@@ -281,4 +281,6 @@ Successfully created load balancer!
 Note to Self:
     1. When you create target group you add heathcheck.
     2. Intervel : per default(30) seconds make healthcheck (/>index.html)
-    3. if Ardisik 5 checks is succesed index is heathy
+    3. if ARDISIK 5 checks is succesed index is heathy else not healthy.
+    4. if one of (5)checks is fail counter will be reset. It began counting from zero.
+    5. I ARDISIK 2 of chechks is failed the instance is unhealthy.
