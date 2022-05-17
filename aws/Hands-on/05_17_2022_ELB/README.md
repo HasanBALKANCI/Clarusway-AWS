@@ -284,3 +284,5 @@ Note to Self:
     3. if ARDISIK 5 checks is succesed index is heathy else not healthy.
     4. if one of (5)checks is fail counter will be reset. It began counting from zero.
     5. I ARDISIK 2 of chechks is failed the instance is unhealthy.
+    6. Timeout : if dont have any response within (5) time, it will be called fail.
+    7. F--S--F--S--F--S--F--S--F (instance is helthy because there is not ARDISIK 2 fail.)
