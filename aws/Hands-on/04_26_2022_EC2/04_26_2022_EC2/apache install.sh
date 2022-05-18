@@ -79,7 +79,7 @@ cd /var/www/html
 
 10. Create a custom `index.html` file under `/var/www/html/` folder to be served on the Server.
 
-echo "HELLO CLARUSWAY" > /var/www/html/index.html
+echo "HELLO CLARUSWAY" > /var/www/html/index.html # This code was created index.html in which is writen Clar..
 
 11. check the index.html
 ls 
