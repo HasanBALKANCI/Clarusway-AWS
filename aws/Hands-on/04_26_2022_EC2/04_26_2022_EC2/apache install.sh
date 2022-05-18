@@ -39,11 +39,11 @@ ssh -i .....pem ec2-user@
 3. Update the installed packages and package cache on your instance.
 
 
-sudo yum update -y
+sudo yum update -y 
 
 
 4. Install the Apache Web Server-default page
-
+# Apache is used for launching website
 
 sudo yum install httpd -y
 
