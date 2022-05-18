@@ -57,13 +57,10 @@ Properties:
             wget $FOLDER/cat3.png
             systemctl start httpd
             systemctl enable httpd
-    Volumes: 
-    - Volume
-
-
-    Tags: 
-
-    - Tag
-  VpcId: String
         
 Outputs:
+  WebsiteURL:
+    Value: !Sub
+      - http://${PublicAddress}
+      - PublicAddress: !GetAtt WebServerHost.PublicDnsName
+    Description: Kittens Carousel Application URL
