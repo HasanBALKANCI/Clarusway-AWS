@@ -1,5 +1,15 @@
 AWSTemplateFormatVersion: 2010-09-09
-Description: |
+Description: 
+  This CloudFormation Template was written for 
+  running Kittens Carousel Static Website on EC2. 
+  Kittens Carousel Static Website will be 
+  deployed on Amazon Linux 2 
+  (ami-0022f774911c1d690) EC2 Instance with 
+  custom security group which allows http 
+  connections on port 80 and ssh port 22 from 
+  anywhere. Kittens Carousel Static Website 
+  is downloaded from my Public Github repository,
+  then deployed on Apache Web Server.
         
 Parameters:
         
