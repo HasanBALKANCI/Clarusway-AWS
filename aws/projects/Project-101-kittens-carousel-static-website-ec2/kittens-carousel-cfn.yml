@@ -1,3 +1,5 @@
+# We create this yaml file for Aws CloudFormation
+
 AWSTemplateFormatVersion: 2010-09-09
 Description: 
   This CloudFormation Template was written for 
@@ -26,8 +28,40 @@ Properties:
       ToPort: 22
       CidrIp: 0.0.0.0/0
   
+  WebServerHost  
+    Type: AWS::EC2::Instance
+    Properties: 
   
-  Tags: 
+    ImageId: ami-0022f774911c1d690
+    InstanceInitiatedShutdownBehavior: String
+    InstanceType: t2.micro
+    KeyName: firstkey
+    SecurityGroupIds: 
+      - !Ref WebServerSecurityGroup
+    Tags: 
+      - Key: Name
+        Value: !Sub Web Server of ${AWS::StackName} Stack
+    
+    UserData: 
+       Fn::Base64:
+          !Sub |
+            #! /bin/bash
+            yum update -y
+            yum install httpd -y
+            FOLDER="https://raw.githubusercontent.com/HasanBALKANCI/Clarusway-AWS/main/aws/projects/Project-101-kittens-carousel-static-website-ec2/static-web"
+            cd /var/www/html
+            wget $FOLDER/index.html
+            wget $FOLDER/cat0.jpg
+            wget $FOLDER/cat1.jpg
+            wget $FOLDER/cat2.jpg
+            wget $FOLDER/cat3.png
+            systemctl start httpd
+            systemctl enable httpd
+    Volumes: 
+    - Volume
+
+
+    Tags: 
 
     - Tag
   VpcId: String
