@@ -30,7 +30,7 @@ Resources:
     Properties:
       ImageId: ami-0022f774911c1d690
       InstanceType: t2.micro
-      KeyName: vincenzo
+      KeyName: Hasan
       SecurityGroupIds:
         - !Ref WebServerSecurityGroup
       Tags:
