@@ -423,6 +423,8 @@ fi
 '''
 13. #! /bin/bash -x (ciktisinda nerde hata oldugunu, hangi komutun calistigini kontrol edebiliriz.)
 
-14. 
+14. case $operation in'de *) digerleri icin sunu yap demek.
+
+15. -e enable \
 
 
