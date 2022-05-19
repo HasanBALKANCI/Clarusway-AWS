@@ -330,7 +330,7 @@ read -p "Select an math operation
 4 - division
 " operation
 
-case $operation in
+case $operation in # yazma internetten case operation in bash script yaz kendine uyarla
   "1") 
      echo "result= $(( $first_number + $second_number))"
   ;;
@@ -344,7 +344,7 @@ case $operation in
      echo "result= $(( $first_number / $second_number))"
   ;;
   *)
-     echo "Wrong choice..." 
+     echo "Wrong choice..."  # * belirlenen araligin disina cikildiginda burayi calistir.
   ;;
 esac
 ```
@@ -384,7 +384,7 @@ NOTE TO SELF:
 
 7. -eq, -ne, -gt, -lt, -ge, -le
 
-8. =, !=, -z(empty string), -n (not empty string) ---> they are used for compromising strings
+8. =, !=, -z(empty string), -n (not empty string) ---> they are used for comparison strings
 
 9. File test operators:
    -d file --> directory
@@ -395,8 +395,8 @@ NOTE TO SELF:
    -w file --> writable
    -x file --> executable
 
-10. MAtematics operations are used in (( == )) for comparation
-11. Boolen operation are used in [[ = ]] for comparation
+10. MAtematics operations are used in (( == )) for comparison
+11. Boolen operation are used in [[ = ]] for comparison
 12. Matematics operations $(( num1 - $AGE ))
 '''
     #! /bin/bash
@@ -421,5 +421,8 @@ else
         echo "$number is less than 10"
 fi
 '''
+13. #! /bin/bash -x (ciktisinda nerde hata oldugunu, hangi komutun calistigini kontrol edebiliriz.)
+
+14. 
 
 
