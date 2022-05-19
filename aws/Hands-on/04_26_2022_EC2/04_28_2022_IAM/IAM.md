@@ -156,3 +156,14 @@ NOTE to SELF:(Recap)
       CLI
       SDK
       API
+  3. cd boto3 (boto3 is a python librory that is used for AWS Management)
+  4. Authentication (Who are you)
+      Username+Passwd + MFA
+      Accesskey + Secretkey
+      Accesskey + Secretkey + Session Token
+  5. Authorization (Whats your authory, permission)
+      IAM Policies
+      Resource Policies
+  6. 
+  
+     
