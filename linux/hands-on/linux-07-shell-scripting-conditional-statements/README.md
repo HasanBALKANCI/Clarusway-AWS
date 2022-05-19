@@ -374,4 +374,8 @@ NOTE TO SELF:
     let total=number++
     let total=++number
     echo "total = $((num1+num2))"
-    
+6. if [[ 10 -gt 9]] ; then ; echo "ten is greater than nine"
+7. -eq, -ne, -gt, -lt, -ge, -le
+8. =, !=, -z(empty string), -n (not empty string) ---> they are used for compromising strings
+9. 
+
