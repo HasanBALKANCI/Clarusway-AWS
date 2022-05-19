@@ -149,3 +149,10 @@ systemctl start httpd
 - Show that the instance without role wasn't able to access S3 bucket. So the web page couldn't fetch the index.html and cat.jpg file.
 
 NOTE to SELF:(Recap)
+  1. users, policies, groups, roles
+  2. Accessing Method:
+     AWS MAnagement Console
+     Programatic Access
+      CLI
+      SDK
+      API
