@@ -355,3 +355,23 @@ esac
 chmod +x case-statement.sh
 ./case-statement.sh
 ```
+NOTE TO SELF:
+1. BASH (Bourne-again shell)
+2. Shell talk with Kernel. And commands go to Kernel.
+3. #! /bin/bash
+4. PS1 is changeable. It is make the prompt colored, and some specialized.
+5. shell
+    #! /bin/bash
+    ./class.sh
+    export PATH:$PATH:/...
+    echo $VARIABLE
+    (a to z) (A to Z) (0 to 9) (_)
+    variable=value
+    read -sp "Enter Passward" passwd
+    read car1 car2 car3
+    $0 to $9,{$10}, $#, $@, $?, $USER, $HOSTNAME, $SECONDS, $RANDOM, $LINENO
+    expr 1 + 3
+    let total=number++
+    let total=++number
+    echo "total = $((num1+num2))"
+    
