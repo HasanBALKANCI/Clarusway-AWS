@@ -147,3 +147,5 @@ systemctl start httpd
 
 ```
 - Show that the instance without role wasn't able to access S3 bucket. So the web page couldn't fetch the index.html and cat.jpg file.
+
+NOTE to SELF:(Recap)
