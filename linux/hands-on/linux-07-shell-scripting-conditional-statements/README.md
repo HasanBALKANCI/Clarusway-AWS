@@ -355,11 +355,16 @@ esac
 chmod +x case-statement.sh
 ./case-statement.sh
 ```
+
 NOTE TO SELF:
 1. BASH (Bourne-again shell)
+
 2. Shell talk with Kernel. And commands go to Kernel.
+
 3. #! /bin/bash
+
 4. PS1 is changeable. It is make the prompt colored, and some specialized.
+
 5. shell
     #! /bin/bash
     ./class.sh
@@ -374,9 +379,13 @@ NOTE TO SELF:
     let total=number++
     let total=++number
     echo "total = $((num1+num2))"
+
 6. if [[ 10 -gt 9]] ; then ; echo "ten is greater than nine"
+
 7. -eq, -ne, -gt, -lt, -ge, -le
+
 8. =, !=, -z(empty string), -n (not empty string) ---> they are used for compromising strings
+
 9. File test operators:
    -d file --> directory
    -e file --> exits
@@ -385,4 +394,32 @@ NOTE TO SELF:
    -s file --> size is > 0 byte
    -w file --> writable
    -x file --> executable
+
+10. MAtematics operations are used in (( == )) for comparation
+11. Boolen operation are used in [[ = ]] for comparation
+12. Matematics operations $(( num1 - $AGE ))
+'''
+    #! /bin/bash
+
+read -p "Enter anumber: " number
+
+if [[ $number -gt 10 ]]
+then
+        echo "$number is greater then 10"
+        if (( $number % 2 == 1 ))
+        then
+                echo "$number is an odd number"
+        else
+                echo "number is an even number"
+
+        fi
+
+elif [[ $number -eq 10 ]]
+then
+        echo "$number is equel to 10"
+else
+        echo "$number is less than 10"
+fi
+'''
+
 
