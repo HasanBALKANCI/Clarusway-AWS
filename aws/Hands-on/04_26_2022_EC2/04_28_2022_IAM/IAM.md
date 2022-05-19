@@ -158,12 +158,18 @@ NOTE to SELF:(Recap)
       API
   3. cd boto3 (boto3 is a python librory that is used for AWS Management)
   4. Authentication (Who are you)
-      Username+Passwd + MFA
+      Username + Passwd + MFA
       Accesskey + Secretkey
       Accesskey + Secretkey + Session Token
   5. Authorization (Whats your authory, permission)
       IAM Policies
-      Resource Policies
-  6. 
+      Resource Policies 
+  6. IAM User = Real Person, Software, Web Application, Service Account
+  7. Root User is special account. Cannat limit permission, Cannot delete Root User, 
+      Enable MFA
+      Dont use Root User for day-to-day work
+      Keep password in a secure location
+  8. When users created, they dont have any authorization. It s explicitly defined.
+  9. 
   
      
