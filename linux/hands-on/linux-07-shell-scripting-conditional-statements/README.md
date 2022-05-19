@@ -377,5 +377,12 @@ NOTE TO SELF:
 6. if [[ 10 -gt 9]] ; then ; echo "ten is greater than nine"
 7. -eq, -ne, -gt, -lt, -ge, -le
 8. =, !=, -z(empty string), -n (not empty string) ---> they are used for compromising strings
-9. 
+9. File test operators:
+   -d file --> directory
+   -e file --> exits
+   -f file --> ordinary file
+   -r file --> readeable
+   -s file --> size is > 0 byte
+   -w file --> writable
+   -x file --> executable
 
