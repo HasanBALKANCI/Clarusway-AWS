@@ -324,7 +324,7 @@ echo ${#DISTROS[@]}
 ### expr
 
 - `expr` command print  the value of expression to standard output. Let's see this.
-# Dont forget to place free space .
+
 ```bash
 expr 3 + 5
 expr 6 - 2
