@@ -1,5 +1,5 @@
 #! /bin/bash
 Welcome () {
-    echo "Welcome to Linux Lessons" $1 $2 $3
+    echo -e "Welcome to Linux Lessons \n$1 \n$2 \n$3" 
 }
 Welcome Joe Matt Timothy
