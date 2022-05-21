@@ -1,0 +1,13 @@
+#! /bin/bash
+echo "Numbers:"
+for NUMBER in {0..9}
+do
+    echo $NUMBER
+done
+
+echo "Names:"
+
+for NAME in JOe DAvid Matt Marcus Timothy
+do
+    echo $NAME
+done
