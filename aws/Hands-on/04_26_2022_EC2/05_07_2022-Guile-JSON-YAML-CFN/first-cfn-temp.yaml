@@ -9,7 +9,7 @@ Resources:
     Properties:
       ImageId: ami-0022f774911c1d690
       InstanceType: t2.micro
-      KeyName: guile  # Please use your key pair name without .pem
+      KeyName: firstkey # Please use your key pair name without .pem
       SecurityGroups:
         - cfn-sec-group
       Tags:
