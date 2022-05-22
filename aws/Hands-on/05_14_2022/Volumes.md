@@ -78,7 +78,7 @@ lsblk
 ```
 - show the available space, on the mounting point path
 ```
-df -h
+df -h # this shows which one add the file system. If disk is not added filesystem it is not used by anyone
 ```
 - check if there is data on it or not.
 ```
