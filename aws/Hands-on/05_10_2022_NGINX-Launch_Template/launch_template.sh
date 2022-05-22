@@ -1,6 +1,8 @@
 clear# Hands-on EC2-03 : Creating an Instance with Launch Template and Versioning
 
-Purpose of the this hands-on training is to give the students understanding of how to create Launch Template on AWS Console with `user data` and how to version Launch Templates.
+Purpose of the this hands-on training is to give the 
+students understanding of how to create Launch Template on AWS Console 
+with `user data` and how to version Launch Templates.
 
 ## Learning Outcomes
 
@@ -118,7 +120,8 @@ Keep it as is
 
 19. Enter number of instance as `1`.
 
-20. Keep the rest of settings as is and click the `Launch instance from template` at the bottom.
+20. Keep the rest of settings as is and click the `Launch instance from template`
+ at the bottom.
 
 21. Go to EC2 Instance menu and show the created instance.
 
@@ -150,7 +153,8 @@ Value           : Webserver-V2
 Resource type   : Instance
 
 
-27. Go to `Advance Details` on the bottom and add the script given below into the `user data` field.
+27. Go to `Advance Details` on the bottom and add the script given below into 
+the `user data` field.
 
 
 #!/bin/bash
