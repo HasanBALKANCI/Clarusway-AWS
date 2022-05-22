@@ -40,7 +40,7 @@ At the end of the this hands-on training, students will be able to;
 - check volumes which volumes attached to instance. 
 - only root volume should be listed
 ```
-lsblk
+lsblk # This demonstrates you have currently blockstorages.
 ```
 ## Section 0 - Create new Volume 
 
