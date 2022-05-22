@@ -4,7 +4,7 @@ Description: |
   This template launches an ec2 instance which enables SSH.
   
 Resources:
-  CFNInstance:
+  CFNInstance: # Tab kullannma, space kullan
     Type: AWS::EC2::Instance
     Properties:
       ImageId: ami-0022f774911c1d690
