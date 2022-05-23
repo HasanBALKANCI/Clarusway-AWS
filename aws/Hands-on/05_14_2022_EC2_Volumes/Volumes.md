@@ -350,7 +350,7 @@ NOTE to SELF
         - ACtion/ Modify /Size :6
         - lsblock ---> 6
         - df -h ---> 5 WHY?
-        - WHY fix the problem you run 'sudo resize2fs /dev/xvdf'
+        - Thats why fix the problem you run 'sudo resize2fs /dev/xvdf'
     8. After modifying and clone format information that is in volume is not lost.
         If you had done format volume you would not see information that is volume.
     9. Rebooting make the EC2 publicip not change.
