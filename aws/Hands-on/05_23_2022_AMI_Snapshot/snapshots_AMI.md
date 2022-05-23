@@ -290,4 +290,12 @@ NOTE TO SELF:
 11. Golden AMI
     - A golden AMI is an AMI that contains security patches, configuration,  and agents required to by an organization. A "just enough OS" (jeOS) is the most basic golden AMI
 
+12. When taking snapshot from Volume we can choose difrent EBS conecting EC2, However, as taking snanpshot from EC2 all volume is choosed automatically.
+13. Life Cycle (EBS)
+    - It works with TAGS
+    -
+14. For Cleaning AWS snapshots, you should track following steps.
+      - EC2 teminate
+      - AMI deregister
+      - Delete snapshot
 
