@@ -261,3 +261,17 @@ NOTE TO SELF:
 2. snapshots aim is : creating volume, backup, ami
 3. source of snopshot: volume, instance
 4. incremantel backup: Aws use this method when snapshot is created
+5. AMI:(Amazon MAchine Image)
+  - Templates (AMI are configured operating system, other software)
+  - You can launch multiple instance from a single AMI with the same configuration.
+6. AMI Types
+  - Public (Amazon manages this. Everyone can use this AMIs)
+  - Paid (This is solt in Marketplace. )
+  - Private (Bazi AMI larin uzerine kendi ihtiyacimiza gore programlar yukleyebiliyoruz.)
+7. Snapshot
+  - It is a point-in-time copy of yoour AMazon EBS Volume / Instance
+8. What is the purpose of using snapshot
+  - Backup
+  - Creating multiple instance with the same features.
+  - Creating a new volume
+9. 
