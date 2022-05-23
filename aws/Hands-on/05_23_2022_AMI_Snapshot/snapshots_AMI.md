@@ -261,7 +261,7 @@ NOTE TO SELF:
 2. snapshots aim is : creating volume, backup, ami
 3. source of snopshot: volume, instance
 4. incremantel backup: Aws use this method when snapshot is created
-5. AMI:(Amazon MAchine Image)
+5. AMI:(Amazon Machine Image)
   - Templates (AMI are configured operating system, other software)
   - You can launch multiple instance from a single AMI with the same configuration.
 6. AMI Types
@@ -280,4 +280,14 @@ NOTE TO SELF:
    - Data Lifecycle Manager (DLM) (This is a service that eases to manage snopshot )
      (Root)Volume/Instance --> Snopshot--> # Volume/ Backup/ ! AMI --> # Encrypted Volume / ! EC2
 
-10. 
+10. Encrytion of Root Device via Snopshot
+    - Root Device cannot be encrypted after creation.
+    - How to encrypted snopshot
+      . Take snopshot of uncrypted volume
+      . Copying the uncrypted Snapshot
+      . You are able to encrypte snopshot while coping
+      . Create an encrypted volume this copied snapshot
+11. Golden AMI
+    - A golden AMI is an AMI that contains security patches, configuration,  and agents required to by an organization. A "just enough OS" (jeOS) is the most basic golden AMI
+
+
