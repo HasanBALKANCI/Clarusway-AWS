@@ -274,4 +274,10 @@ NOTE TO SELF:
   - Backup
   - Creating multiple instance with the same features.
   - Creating a new volume
-9. 
+9. Source of snashot Volume or Instance
+   - Stored in S3 (It is charged, paid you go)
+   - Incremental storege (This feature stores only those which were changed)
+   - Data Lifecycle Manager (DLM) (This is a service that eases to manage snopshot )
+     (Root)Volume/Instance --> Snopshot--> # Volume/ Backup/ ! AMI --> # Encrypted Volume / ! EC2
+
+10. 
