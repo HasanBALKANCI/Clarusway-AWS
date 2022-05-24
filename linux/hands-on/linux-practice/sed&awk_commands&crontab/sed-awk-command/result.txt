@@ -1,0 +1,4 @@
+#! /bin/bash
+
+awk '/i-0c127ab5cdf997cf4/ {print }' event_history.csv | grep "TerminateInstance" | cut -d "," -f -1,2,4,10
+

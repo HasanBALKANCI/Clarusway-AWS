@@ -1,0 +1,5 @@
+#! /bin/bash
+
+if ((cut -d "," -f 4  sorted_history.csv = TerminateInstances ))  && (( cut -d "," -f 1  sorted_history.csv  = Serdar)) 
+then
+    echo "yes"
