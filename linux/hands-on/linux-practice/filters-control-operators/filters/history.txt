@@ -1,0 +1,171 @@
+    1  sudo yum -y update
+    2  sudo yum install git
+    3  git clone 
+    4  git clone https://github.com/HasanBALKANCI/Clarusway-AWS.git
+    5  git remote -v
+    6  ls
+    7  cd Clarusway-AWS/
+    8  git remote -v
+    9  ls
+   10  cd linux-practice
+   11  ls
+   12  mkdir filters-control-operators
+   13  cd filters-control-operators/
+   14  mkdir filters && cd filters
+   15  vim days.txt
+   16  cat days.txt 
+   17  git config --global --edit
+   18  git pull
+   19  git add .
+   20  git config -m "filters and controls operators were recaped"
+   21  git status
+   22  git pull
+   23  git config --global user.email "swhsnblknc@gmail.com"
+   24  git config --global user.name "HasanBALKANCI"
+   25  whoami
+   26  git pull
+   27  git push
+   28  touch count.txt
+   29  cat<<EOF> count.txt 
+one
+two
+three
+four
+five
+six
+seven
+eight
+nine
+ten
+eleven
+EOF
+
+   30  cat count.txt 
+   31  tac count.txt | tee temp.txt && cat temp.txt
+   32  cat temp.txt 
+   33  cat <<EOF> tennis.txt
+AMelia,Mauresma, Fra
+Justine, Heinen, BAE
+Hasan, Jhon, Willems
+EOF
+
+   34  cat tennis.txt 
+   35  grep "Williams" tennis.txt 
+   36  export PS1="\[\e[1;31m\]\u\[\e[1;36m\]\[\033[m\]@LinuxServer:\[\e[0m\]\[\e[1;32m\][\W]> \[\e[0m\]"
+   37  cat tennis.txt | grep "Williams"
+   38  ls
+   39* c
+   40  grep "Willems" tennis.txt 
+   41  cat tennis.txt | grep "Willems"
+   42  grep "*us*" tennis.txt 
+   43  grep "us" tennis.txt 
+   44  cut -d "," -f 3 tennis.txt 
+   45  cat /etc/passwd
+   46  cut -d ":" -f 1 /etc/passwd
+   47  cat <<EOF> clarusway.txt
+Clarusway:Road to reinvent yourself.
+EOF
+
+   48  cat clarusway.txt 
+   49  tr "aer" "QAZ" clarusway.txt 
+   50  cat clarusway.txt | tr "aer" "QAZ"
+   51  cat clarusway.txt 
+   52  cat count.txt | tr "\n" " "
+   53  cat clarusway.txt | tr "aeioöåä" ""
+   54  cat clarusway.txt | tr "aeioöåä" "-"
+   55  cat clarusway.txt | tr "aeioöåä" "X"
+   56  cat clarusway.txt | tr -d "aeiu"
+   57  cat clarusway.txt | tr [a-z] [A-Z]
+   58  wc count.txt 
+   59  wc -l /etc/passwd
+   60  cat <<EOF> marks.txt
+aeron-9
+albert-9
+james-9
+john-10
+oliver-7
+tom-7
+victor-10
+walter-8
+EOF
+
+   61  cat marks.txt 
+   62  sort marks.txt 
+   63  sort -r marks.txt 
+   64  cat <<EOF> traniee.txt
+john
+james
+aeron
+oliver
+walter
+albert
+james
+john
+travis
+mike
+aeron
+thomas
+daniel
+john
+aeron
+oliver
+mike
+john
+EOF
+
+   65  cat traniee.txt 
+   66  sort traniee.txt | uniq
+   67  cat <<EOF> file1.txt
+   68  ls
+   69  cat <<EOF> file1.txt
+Aeron
+Bill
+James
+John
+Oliver
+Walter
+EOF
+
+   70  cat <<EOF> file2.txt
+Guile
+James
+John
+Raymond
+EOF
+
+   71  comm file1.txt file2.txt 
+   72  cat <<EOF> countries.csv
+ountry,Capital,Continent
+USA,Washington,North America
+France,Paris,Europe
+Canada,Ottawa,North America
+Germany,Berlin,Europe
+EOF
+
+   73  cut -d "," -f 3 countries.csv | tr -d "Continent" | sort | uniq > continent.txt
+   74  ls
+   75  cat continent.txt 
+   76  rm -rf continent.txt 
+   77  cut -d "," -f 3 countries.csv | tr -wd "Continent" | sort | uniq > continent.txt
+   78  LS
+   79  ls
+   80  echo ?$
+   81  echo $?
+   82  cat days.txt || echo "Clarusway"
+   83  echo "first" || echo "second" ; echo "third"
+   84  echo "first" || echo "second" ; echo "third" | tr "\n” " "
+
+ff
+   85  echo "first" || echo "second" ; echo "third" ; tr "\n" " "
+   86  echo "first" || echo "second" | echo "third"
+   87  cp file1.txt file11.txt
+   88  ls
+   89  rm file11.txt && echo "file11.txt was removed" || echo "Failed"
+   90  echo '# is the comment sign' # echo command displays the string comes after it.
+   91  echo # is the comment sign
+   92  echo \# is the comment sign
+   93  echo The special characters are \*, \\, \", \#, \$, \'.
+   94  find ./ "clarusway.doc" && cat clarusway.doc || echo "clarusway.doc is not exist."
+   95  history
+   96  cat history > history.txt
+   97  history > history.txt
