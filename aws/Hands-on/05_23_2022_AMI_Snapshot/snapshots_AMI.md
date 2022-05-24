@@ -260,7 +260,7 @@ NOTE TO SELF:
 1. snapshot stores in S3
 2. snapshots aim is : creating volume, backup, ami
 3. source of snopshot: volume, instance
-4. incremantel backup: Aws use this method when snapshot is created
+4. incremantel backup: Aws use automatically this method when snapshot is created 
 5. AMI:(Amazon Machine Image)
   - Templates (AMI are configured operating system, other software)
   - You can launch multiple instance from a single AMI with the same configuration.
