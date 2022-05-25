@@ -357,4 +357,10 @@ Note to self
     - Default Unversioned. If you make it versioned you cant cancel it only can be suspended.
 8. S3 Static Web Hosting
   - No server, no application, 
-  - 
+
+9. How to do Object public
+    - Click object
+    - Action
+    - Share with a presigned URL (not permanently)
+If you want to make it be permanent
+ - Action /make public using ACL
