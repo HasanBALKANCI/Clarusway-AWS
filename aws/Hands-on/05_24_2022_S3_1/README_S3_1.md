@@ -294,3 +294,67 @@ PROPERTIES>>>>> STATIC WEBSITE HOSTING
 - Show versioning of the index.html, and delete the latest version.
 
 - Open static website URL in browser again, observe that it is showing the "Version 1" content.
+
+Note to self
+
+1. A  bucket is a logical storage unit used to srore object in AWS 
+  - A bucket can also be considered as a container
+  - S3 stores data in buckets as objects
+  - max 100 buckets
+2. S3 is a global service, but a region must be selected
+  - Objects is stored in a min of 3 AZs in an S3 Region
+  - Bucket's name must be unique.
+3. Object 5TB, number is limetless
+4. 160 GB can be storage by AWS MAnagement Console
+5. - Upload, Transfering in the same Region --> free
+   - Download, Storage, Request is required pricing
+6. Storage Classes
+  - Standart
+    . Default
+    . Cloua Application, Mobile GAmes, Website Hosting
+    . frequently acces
+    . Reliability 11 9
+    . Avaibiality 99.99
+  - Reduced Redundancy
+  - Intelligent-Tiering
+    . 4 access tier
+      1. Frequent access
+        (30 days)
+      2. Infrequent A 
+        (90 days)
+      3. Archive A 
+        (180 days)
+      4. Deep Archive A. 
+    . Patterns are unknown or unpredictable
+  - Standart -IA
+    . infrequently access
+    . reach quickly
+  - One Zone -IA
+    . infrequently
+    . 20 percent cheaper than Standart IA
+    . one zone
+    . data is not very important
+  - Glacier
+
+    . S3 Glacier Instant Retrieval
+      - miliseconds retrieval
+      - higher data access costs
+    . S3 Glacier Flexible Retrieval
+      - long term storage
+      - 90 days , 
+       expedited 1-5 minutes
+       standart 3-5 hours
+       bulk 5-12 hours
+    . This is a service
+  - Glacier Deep Archive
+    . lowest cost storage option
+    . 180days
+    . retrieval time 12 hours
+  - S3 Outposts
+    . Hybrid
+    . Pentagonun deposuna kurulucak,  AWS arayuzuyle heryerden erisilecek.
+7. Versioning
+    - Default Unversioned. If you make it versioned you cant cancel it only can be suspended.
+8. S3 Static Web Hosting
+  - No server, no application, 
+  - 
