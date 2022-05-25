@@ -1,7 +1,7 @@
 #!/bin/bash
 NUMBER=1
 
-until [[ $NUMBER -eq 10 ]]
+until [[ $NUMBER -lt 10 ]]
 do
     echo "$NUMBER"
     ((NUMBER++))
