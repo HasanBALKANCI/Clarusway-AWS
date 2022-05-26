@@ -89,11 +89,4 @@ Linux_Projects (folder)
 
 - [Uniq Comand](https://www.geeksforgeeks.org/uniq-command-in-linux-with-examples/)
 
-Note to self
-1. grep -o (only)
-- cat event_history.csv | grep "serdar" | grep -i "Terminate" | grep -Eo  "i-.{17}"
-
-- cat event_history.csv | grep "serdar" | grep -i "Terminate" | grep -Eo  "i-[a-zA-Z0-9]{17}"
-
-
 
