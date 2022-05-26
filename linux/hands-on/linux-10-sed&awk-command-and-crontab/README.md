@@ -272,6 +272,7 @@ sed.txt
 
 ```bash
 awk '{ if($7 == "3") print $0;}' awk.txt
+
 ```
 
 **Output:**
