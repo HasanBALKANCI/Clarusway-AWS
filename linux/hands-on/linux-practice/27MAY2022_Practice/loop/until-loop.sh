@@ -2,7 +2,7 @@
 
 number=1
 
-while [[ $number -ge 10  ]]
+until [[ $number -ge 10  ]]
 do
   echo $number
   ((number++))
