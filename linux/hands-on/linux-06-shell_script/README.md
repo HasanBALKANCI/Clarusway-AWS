@@ -288,7 +288,7 @@ DISTROS[2]="debian"
 DISTROS[3]="centos"
 DISTROS[4]="alpine"
 ```
-# DISTROS=() ---> This is make list craeted.
+# DISTROS=() ---> This is make list.
 
 - We can also use following method.
 
