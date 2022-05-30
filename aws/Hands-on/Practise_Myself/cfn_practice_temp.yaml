@@ -12,7 +12,20 @@ Parameters:
 Mappings:
   
 Resources:
-  practiseSG:
+  # Create Target Group
+  PractiseTargetG:
+    Type: AWS::ElasticLoadBalancingV2::TargetGroup
+    Properties:
+      HealthCheckIntervalSeconds: 10
+      HealthCheckTimeoutSeconds: 5
+      HealthyThresholdCount: 3
+      Name: PractiseTargetGroup
+      Port: 80
+      Protocol: HTTP
+      UnhealthyThresholdCount: 3
+      VpcId: "String" # add later
+  # creating security group
+  PractiseSecurityG:
     Type: AWS::EC2::SecurityGroup
     Properties:
       GroupDescription: Enables HTTP and SSH # Required
@@ -28,6 +41,7 @@ Resources:
           CidrIp: 0.0.0.0/0
       Tags:
         Tags
-      VpcId: "String"
+      VpcId: "String" # add later
+  
   
 Outputs:
