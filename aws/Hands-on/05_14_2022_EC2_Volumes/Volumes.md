@@ -123,7 +123,7 @@ ls /mnt/mp1/
 
 - show that mounting point path will be gone when instance rebooted 
 ```
-sudo reboot now
+sudo reboot now    # After rebooting public ip dont change.
 ```
 - show the new volume is still attached, but not mounted
 ```
