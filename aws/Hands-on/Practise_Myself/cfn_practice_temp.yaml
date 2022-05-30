@@ -8,6 +8,14 @@ AWSTemplateFormatVersion: 2010-09-09
 Description: |
   
 Parameters:
+  #5. KeyPair:
+  AWSKeyPair:
+    Description: Select your keypair.
+    Type: AWS::EC2::KeyPair::KeyName
+
+
+
+  #4. InstanceType was created to use by !Ref within LauncTemplate
   InstanceType:
     Description: Select your instance type
     Type: 
@@ -26,8 +34,8 @@ Resources:
     Properties:
       LaunchTemplateData:
         ImageId: "String"
-        InstanceType: !Ref InstanceType
-        KeyName: "String"
+        InstanceType: !Ref InstanceType # it returns Parameters/IstanceType Values
+        KeyName: !Ref AWSKeyPair
         SecurityGroupIds:
           -
         SecurityGroups:
