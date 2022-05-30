@@ -1,1 +1,33 @@
 # When you want to create any template you shoul use aws documentations.
+
+# You shoul use extension AWS CloudFormation template Lint, YAML, CloudFormation Snippets 
+# You shoul start with "cfn"
+
+AWSTemplateFormatVersion: 2010-09-09
+
+Description: |
+  
+Parameters:
+  
+Mappings:
+  
+Resources:
+  practiseSG:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: Enables HTTP and SSH # Required
+      GroupName: TemplateSG
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 80
+          ToPort: 80
+          CidrIp: 0.0.0.0/0
+        - IpProtocol: tcp
+          FromPort: 22
+          ToPort: 22
+          CidrIp: 0.0.0.0/0
+      Tags:
+        Tags
+      VpcId: "String"
+  
+Outputs:
