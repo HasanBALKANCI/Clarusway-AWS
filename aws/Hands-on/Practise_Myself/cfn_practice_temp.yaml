@@ -26,6 +26,8 @@ Parameters:
       - t3.nano
 
 Mappings:
+  #6. Mappin use with !FindInMap function. [ MapName,TopLevelKey,SecondLevelKey ]
+  # We use it Resources/LaunchTemplate/ImageId
   RegionImageMap:
     us-east-1:
       AMI: ami-0022f774911c1d690
@@ -44,13 +46,17 @@ Resources:
     Type: AWS::EC2::LaunchTemplate
     Properties:
       LaunchTemplateData:
-        ImageId: "String"
+        ImageId: !FindInMap # we determined it in Mapping
+          - RegionImageMap # [MapName]
+          - !Ref AWS::Region  # How to find in which region you work---Pseudo Parameters must be used
+          - AMI # [SecondLevelKey]
         InstanceType: !Ref InstanceType # it returns Parameters/IstanceType Values
         KeyName: !Ref AWSKeyPair
-        SecurityGroupIds:
-          -
-        SecurityGroups:
-          -
+        SecurityGroupIds: #if you use created vpc by yourself you must use SEcurityGroupsId
+        # And only on of (SecurityGroups or SGid can used)
+        # You must use security groups id with GetAtt (Get atribute)
+          - !GetAtt PractiseSecurityG.GroupId # you use Security groups ID
+        
         UserData: !Base64 |
         #! /bin/bash
           yum update -y
