@@ -26,6 +26,17 @@ Parameters:
       - t3.nano
 
 Mappings:
+  RegionImageMap:
+    us-east-1:
+      AMI: ami-0022f774911c1d690
+    us-east-2:
+      AMI: ami-0233c2d874b811deb
+    us-west-1:
+      AMI: ami-0ed05376b59b90e46
+    us-west-2:
+      AMI: ami-0dc8f589abe99f538
+    eu-west-1:
+      AMI: ami-058b1b7fe545997ae
   
 Resources:
   #3. Launch Template
