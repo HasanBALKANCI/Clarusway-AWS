@@ -314,3 +314,9 @@ Note to Self:
             Least outstanding request : each request direct EC2 which has least operation/process.
 
             Stickness: The type of stickiness associated with this target group. If enabled, the load balancer binds a client’s session to a specific instance within the target group.
+            Allows clients to route same inctance aim to not lose any information/processing.
+            (Beni direkli ayni EC2 ya yönlendir. Yaptigim islemler kaybolmasin)
+    4. ELB/Listener, you can add a new listener.
+    5. ELB/Listener/...View/Edit Rules
+     You can arrange web trafic by routing the trafic to different target group.
+
