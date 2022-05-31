@@ -6,7 +6,14 @@
 # https://awscli.amazonaws.com/v2/documentation/api/latest/index.html
 # https://aws.amazon.com/blogs/compute/query-for-the-latest-amazon-linux-ami-ids-using-aws-systems-manager-parameter-store/
 
-
+<<comment
+How to install CLI for MAC
+1.  curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"
+2.    sudo installer -pkg ./AWSCLIV2.pkg -target /
+3. To verify that the shell can find and run the aws command in your $PATH, use the following commands.
+which aws
+aws --version
+comment
 
 # Installation
 
