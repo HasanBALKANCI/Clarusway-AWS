@@ -127,4 +127,9 @@ export PATH=$PATH:/usr/local/bin/aws
 Note to Self:
 1. CLI last version is v2
 2. If you have v1 and you want to install v2, firstly you should uninstall v1.
-3. 
+3. uninstall CLI v1
+sudo rm -rf /usr/local/aws
+sudo rm /usr/local/bin/aws
+or
+pip3 uninstall awscli
+4. 
