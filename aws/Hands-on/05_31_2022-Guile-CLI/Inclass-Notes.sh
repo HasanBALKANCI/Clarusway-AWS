@@ -51,7 +51,7 @@ export AWS_PROFILE=default
 
 aws configure list-profiles
 
-aws sts get-caller-identity
+aws sts get-caller-identity # who am i
 
 # IAM
 aws iam list-users
@@ -132,4 +132,21 @@ sudo rm -rf /usr/local/aws
 sudo rm /usr/local/bin/aws
 or
 pip3 uninstall awscli
-4. 
+4. Ayni anda iki farkli hesapla kullanmamiz gerektiginde, 
+aws ye baglanmamiz gerekiyor profiller kullanilir.
+   aws configure --profile hasan-company
+5. Yeni profili komutla kullanmak icin
+   aws s3 ls --profile hasan-company
+6. Who am i ?
+   aws sts get-caller-identity
+7. commands:
+   aws help
+   aws s3 help
+   aws iam list-users
+8. CLI documentation
+https://awscli.amazonaws.com/v2/documentation/api/latest/index.html
+
+9. CLI cheetsheet 
+https://aws.plainenglish.io/aws-cli-commands-cheatsheet-49fab131b35d
+
+10. 
