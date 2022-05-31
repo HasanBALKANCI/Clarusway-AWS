@@ -300,3 +300,10 @@ Note to Self:
 
     2. If we want to connect to EC2 only in a one way by using ALB, we should create two difrent seccurity groups one of them is for ALB (ie. ALBSecurityG 80/22 is open, Source anywhere 0.0.0.0/0), and the other is for Instances (ie. InstanceSecurityG, port 80/22 is open, Source ALBSecurityG)
     So we can't connect to instance directly. Because instance security groups resources is ALB's securitygroup now.
+
+    3. EC2/Target groups/ALBTargetGrp/Edit attributes
+        - At here we can see
+            * Deregistration delay 
+            This is 300 default. It allows you to protect going on trafic in EC2 within 300 seconds before terminate/stop in order to don't cut connection of client.
+
+            *
