@@ -292,3 +292,11 @@ Note to Self:
     5. I ARDISIK 2 of chechks is failed the instance is unhealthy.
     6. Timeout : if dont have any response within (5) time, it will be called fail.
     7. F--S--F--S--F--S--F--S--F (instance is helthy because there is not ARDISIK 2 fail.)
+
+    Note to self:
+
+    1. At the above hands on we create ALB but we connect to EC2 directly via using EC2's publicIP and inderictly by using ALB's DNS adress.
+    Security Group (80,22)
+
+    2. If we want to connect to EC2 only in a one way by using ALB, we should create two difrent seccurity groups one of them is for ALB (ie. ALBSecurityG 80/22 is open, Source anywhere 0.0.0.0/0), and the other is for Instances (ie. InstanceSecurityG, port 80/22 is open, Source ALBSecurityG)
+    So we can't connect to instance directly. Because instance security groups resources is ALB's securitygroup now.
