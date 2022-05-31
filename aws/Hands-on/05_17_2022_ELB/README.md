@@ -306,4 +306,11 @@ Note to Self:
             * Deregistration delay 
             This is 300 default. It allows you to protect going on trafic in EC2 within 300 seconds before terminate/stop in order to don't cut connection of client.
 
-            *
+            * Load balancing algorithm:
+            Determines how the load balancer selects targets from this target group when routing requests.
+
+            Round: each request direct each EC2 respectivly (in turn)
+
+            Least outstanding request : each request direct EC2 which has least operation/process.
+
+            Stickness: The type of stickiness associated with this target group. If enabled, the load balancer binds a client’s session to a specific instance within the target group.
