@@ -123,3 +123,8 @@ sudo ./aws/install
 
 # Update the path accordingly if needed
 export PATH=$PATH:/usr/local/bin/aws
+
+Note to Self:
+1. CLI last version is v2
+2. If you have v1 and you want to install v2, firstly you should uninstall v1.
+3. 
