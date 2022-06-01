@@ -25,5 +25,29 @@ Resources:
           FromPort: 22
           ToPort: 22
           CidrIp: 0.0.0.0/0
+  WebServerHost:
+    Type: AWS::EC2::Instance
+    Properties:
+      KeyName: !Ref KeyName # we use !Ref for using paramater
+      ImageId: ami-0022f774911c1d690
+      InstanceType: t2.micro
+      SecurityGroupIds:
+        - !Ref WebServerSecurityGroup
+      UserData: !Base64 |
+        #!/bin/bash 
+        yum update -y
+        yum install python3 -y
+        pip3 install flask
+        cd /home/ec2-user
+        wget https://raw.githubusercontent.com/XXXXXXX/my-projects/main/aws/projects/Project-001-Roman-Numerals-Converter/app.py
+        mkdir templates
+        cd templates
+        wget https://raw.githubusercontent.com/XXXXXXX/my-projects/main/aws/projects/Project-001-Roman-Numerals-Converter/templates/index.html
+        wget https://raw.githubusercontent.com/XXXXXXXXX/my-projects/main/aws/projects/Project-001-Roman-Numerals-Converter/templates/result.html
+        cd ..
+        python3 app.py
+      Tags:
+        - Key: Name
+          Value: !Sub Web Server of ${AWS::StackName} Stack    
   
 Outputs:
