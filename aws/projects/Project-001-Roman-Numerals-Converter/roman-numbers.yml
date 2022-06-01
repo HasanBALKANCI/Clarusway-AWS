@@ -48,6 +48,13 @@ Resources:
         python3 app.py
       Tags:
         - Key: Name
-          Value: !Sub Web Server of ${AWS::StackName} Stack    
+          Value: !Sub Web Server of ${AWS::StackName} Stack
+ # !Sub henuz olusmamis site olustuktan sonraki kaynaklar icin kullanilir   
   
 Outputs:
+  WebsiteURL:
+    Value: !Sub
+      - http://${PublicAddress}
+      - PublicAddress: !GetAtt WebServerHost.PublicDnsName 
+      # !Get ec2nun atributunu (PublicDnsName) kullan (WebServerHost ec2 nun ismi)
+    Description: Roman Numerals Converter Application URL
