@@ -1,8 +1,29 @@
 AWSTemplateFormatVersion: 2010-09-09
 Description: |
+  CloudFormation Template for Roman Numerals Converter Application. 
+  This template creates Python Flask Web Application on 
+  Amazon Linux 2 (ami-0022f774911c1d690) EC2 Instance with 
+  custom security group allowing http connections on port 80 and SSH connection on port 22. 
+  Roman Numerals Converter Application is downloaded from Github repository, then install
   
 Parameters:
+  KeyName:
+    Description: Enter the name of your Key Pair for SSH connections
+    Type: AWS::EC2::KeyPair::KeyName
   
 Resources:
+  WebServerSecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: Enable HTTP for Flask Web Server and SSH port to secure reach to my EC2
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 80
+          ToPort: 80
+          CidrIp: 0.0.0.0/0
+        - IpProtocol: tcp
+          FromPort: 22
+          ToPort: 22
+          CidrIp: 0.0.0.0/0
   
 Outputs:
