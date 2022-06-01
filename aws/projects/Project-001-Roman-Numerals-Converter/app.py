@@ -24,13 +24,7 @@ def main_post():
         return render_template('result.html', number_decimal = number , number_roman= convert(number), developer_name='Hasan')
     else:
         return render_template('index.html', developer_name='Hasan', not_valid=False)
-<<<<<<< HEAD
-if __name__ == '__main__':
-    app.run(debug=True)
-    # app.run(host='0.0.0.0', port=80)
-=======
 
 if __name__ == '__main__':
     # app.run(debug=True)
     app.run(host='0.0.0.0', port=80)
->>>>>>> 98015fe6d68022adf2bfa03d99cb53987645cfac
