@@ -28,3 +28,4 @@ def valid_paren(input_str):
     print(input_str, "contains valid parentheses.")
   else:
     print(input_str, "contains invalid parentheses.")
+valid_paren("([[[()]])(){}")
