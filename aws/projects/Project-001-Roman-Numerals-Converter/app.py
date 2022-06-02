@@ -1,4 +1,5 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request 
+# Kutucugun icine deger girilecekse request
 
 app = Flask(__name__)
 
@@ -12,9 +13,10 @@ def convert(decimal_num):
     return num_to_roman
 
 
-@app.route('/', methods=['POST', 'GET'])
+@app.route('/', methods=['POST', 'GET']) 
+# decoreter, / anasayfa karsimiza ciktiginda, methods POST veya GET uygula
 def main_post():
-    if request.method == 'POST':
+    if request.method == 'POST': # eger request methodun POST ise
         alpha = request.form['number']
         if not alpha.isdecimal():
             return render_template('index.html', developer_name='Hasan', not_valid=True)
@@ -26,5 +28,5 @@ def main_post():
         return render_template('index.html', developer_name='Hasan', not_valid=False)
 
 if __name__ == '__main__':
-    # app.run(debug=True)
-    app.run(host='0.0.0.0', port=80)
+    app.run(debug=True)
+    # app.run(host='0.0.0.0', port=80)
