@@ -4,7 +4,7 @@ Description: |
   This template creates Python Flask Web Application on 
   Amazon Linux 2 (ami-0022f774911c1d690) EC2 Instance with 
   custom security group allowing http connections on port 80 and SSH connection on port 22. 
-  Roman Numerals Converter Application is downloaded from Github repository, then install
+  Roman Numerals Converter Application is downloaded from Github repository, then installed on Flask
   
 Parameters:
   KeyName:
