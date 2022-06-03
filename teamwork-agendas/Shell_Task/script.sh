@@ -5,8 +5,9 @@ _current_label="entry"
 
 getURL_function(){
 echo "Enter a valid URL:"
-read URL  # get URL input
+read URL  # get URL input, you can find it by serching valid url on web.
 VALID='(https?|ftp|file)://[-A-Za-z0-9\+&@#/%?=~_|!:,.;]*[-A-Za-z0-9\+&@#/%=~_|]'  
+# Valid is variable to check if the URL format is appropriate or not according to given conditions below
 # string='http://www.google.com/test/link.php'
 
 if [[ $URL =~ $VALID ]]; then 
@@ -29,7 +30,7 @@ getDIRPATH_function(){
 # Write down the correct path of your local directory to save the images downloaded.   
 echo "Enter image download directory: [ $PWD/downloads ] for default press Enter"
 read DIRPATH # get DIRPATH input 
-DIRPATH=${DIRPATH:-$PWD\/downloads}
+DIRPATH=${DIRPATH:-$PWD\/downloads} # \ conceconate
 echo "dirpath ---> ${DIRPATH}"
 
 if [ -d $DIRPATH ]; then
@@ -46,11 +47,12 @@ while [ "$_current_label" != "done" ];
 do
   getDIRPATH_function ; 
 done
-
+# Optional username and password entry and Basic Authentication.
 echo "Please enter your username (if not just press Enter): "  
 read USERNAME  #Assign input value into a variable 
 echo "Please enter your password (if not just press Enter): "  
 read PASSWORD  # Assign input value into a variable 
+# read -p "Enter your user name" USERNAME
 
 if [-z $USERNAME]; then
      wget -k -O webpage.html --content-disposition $URL # Download index page with wget, "k" option converts local links to global.
@@ -58,11 +60,12 @@ else
      wget -k -O webpage.html --content-disposition --user=$USERNAME --password=$PASSWORD $URL # Download index page with wget, "k" option converts local links to global.
 fi
 
+# Extraction rules
 # filter throw grep img to get only rows with <img> HTML tag. Second grep get the files having .png extensions case-insensitively. Third grep uses regexp to get links' addresses. sed cuts arguments in links after ? character. Finally, save our links to links.txt
 
 cat webpage.html | grep .png | sed -E -n '/<img/s/.*src="([^"]*)".*/\1/p' > $DIRPATH/links.txt
 cat ${DIRPATH}/links.txt | sed -e 's/\.png.*$/.png/' > $DIRPATH/links2.txt
-cat | awk '!seen[$0]++' ${DIRPATH}/links2.txt > ${DIRPATH}/links.txt
+cat | awk '!seen[$0]++' ${DIRPATH}/links2.txt > ${DIRPATH}/links.txt # It allows you to eliminate duplicate pic.
 
 cd ${DIRPATH} && rm -f links2.txt && wget -i $DIRPATH/links.txt --append-output=logfile  # download all images with this command
 
@@ -71,3 +74,4 @@ cd ${DIRPATH} && rm -f links2.txt && wget -i $DIRPATH/links.txt --append-output=
 
 # another option:
 # curl -s $URL/a.html | sed -En '/<img/s/.*src="([^"]*)".*/\1/p' # Download a web page and getting images
+
