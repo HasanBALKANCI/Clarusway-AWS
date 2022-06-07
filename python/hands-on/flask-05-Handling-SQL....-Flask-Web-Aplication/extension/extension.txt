@@ -1,8 +1,13 @@
 # In this project you need to install extension that located follawing.
+
 sudo yum update -y
-
+sudo yum istall git -y
+sudo pip3 install Flask
 pip3 install flask-mysql
-
 pip3 install sqlalchemy
-
 pip3 install Flask-SQLAlchemy
+sudo pip3 list
+sudo python3 f-----.sh
+
+# https://flask-sqlalchemy.palletsprojects.com/en/2.x/config/
+# https://code.tutsplus.com/tr/tutorials/creating-a-web-app-from-scratch-using-python-flask-and-mysql--cms-22972
