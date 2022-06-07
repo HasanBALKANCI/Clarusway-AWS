@@ -1,4 +1,5 @@
 # In this project you need to install extension that located follawing.
+sudo yum update -y
 
 pip3 install flask-mysql
 
