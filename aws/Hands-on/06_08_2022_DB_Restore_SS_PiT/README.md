@@ -288,7 +288,7 @@ SELECT * FROM employees;
 EXIT;
 ```
 
-- For `point in time recovery` PART (PART-4), please note down the current time. (Exp: August 12, 2020, 22:45:34, UTC +3) and let the students know:
+- For `point in time recovery` PART (PART-4), please note down the current time. (Exp: June 12, 2022, 21:25:34, UTC +3) and let the students know:
 
      -enter the time: 22:26:45
 
