@@ -314,7 +314,7 @@ crontab -u username -e  # edit other users's crontab file
 * = Any/All values           # e.g. *
 - = Range of values          # e.g. 1-5 
 , = Multiple/List of values  # e.g. 1,2,3
-/ = Step values              # e.g. 1/3
+/ = Step values              # e.g. 1/5
 ```
 
 - Finally let’s create some crontab tasks. Create a cron task writes the system date information every day at 1 p.m. to the date.log file.
@@ -327,8 +327,7 @@ crontab -e
 - Create a cron task updates and upgrades our server every Sunday at 3 a.m.
 
 ```bash
-0 3 * * sun sudo yum update -y
-```
+0 3 * * sun sudo yum update 
 
 -  List the cron tasks.
 
