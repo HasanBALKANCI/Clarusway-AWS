@@ -201,4 +201,11 @@ STEP 6: enable Auto-Assign Public IPv4 Address for public subnets
 
 - Compare the IP of instance and Subnet CIDR block.
 
+Note to self:
+1. VPC stands for virtual private cloud.
+2. A VPC can span multiple availability zones in the region.
+3. VPC is a region base servis in AWS.
+4. Network ACLs are assigned to Subnets, While Security Groups ara assigned to RDS or EC2 instances.
+5. 
+
 
