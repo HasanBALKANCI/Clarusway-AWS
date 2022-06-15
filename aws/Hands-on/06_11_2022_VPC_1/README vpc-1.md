@@ -202,10 +202,41 @@ STEP 6: enable Auto-Assign Public IPv4 Address for public subnets
 - Compare the IP of instance and Subnet CIDR block.
 
 Note to self:
-1. VPC stands for virtual private cloud.
+1. VPC stands for virtual private cloud. VPC is a logically isolated area of the AWS cloud where you can launch AWS resources in a virtual network that you define.
+
 2. A VPC can span multiple availability zones in the region.
 3. VPC is a region base servis in AWS.
 4. Network ACLs are assigned to Subnets, While Security Groups ara assigned to RDS or EC2 instances.
-5. 
+5. Private and Public Subnets located in the same VPC can send traffic to each other.
+6. Route Table contains a set of rules that are used to determine where traffic
+from your subnet or gateway is directed.
+7. VPC can contain:
+  Availabilty Zones, 
+  Subnet(Private or Public),
+  CIDR (Classless Inter Domain ) :
+    According to standards set forth in Internet Engineering Task Force (IETF) document RFC-1918, the following IPv4 address ranges are reserved by the IANA for private internets, and are not publicly routable on the global internet:
+
+    10.0.0.0/8 IP addresses: 10.0.0.0 – 10.255.255.255
+    172.16.0.0/12 IP addresses: 172.16.0.0 – 172.31.255.255
+    192.168.0.0/16 IP addresses: 192.168.0.0 – 192.168.255.255
+
+    When creating CIDR in generally we use the formula of 2^n - 2, but in AWS we use 2^n -5. 
+
+  Internet Gateway is a VPC component that provides communication between resources in your VPC and the internet.
+
+  Route Table:
+    Route Table is created automatically when VPC is launched.
+    You should associate route table with subnets.
+    Route table make subnets be private or public by using route table rules.
+     
+  Network Acces Control List:
+    it allows both ALLOWS and DENY
+    By default, all the rules are ALLOWED
+    Newly created by user --> By default, all the rules are DENEIED
+    It is stateless (inbound and outbound must be controlled)
+    It is subnet-based.
+    Subnet can associate with only one Network ACL
+
+
 
 
