@@ -321,6 +321,9 @@ You can stream primary traffic through the first tunnel and use the second tunne
 
 * In AWS Site-to-Site VPN,  each VPN connection has …2. VPN Tunnels which you can use them for high availability.
 
+* For making VPC peering. both VPCs don't have same subnet ip(CIDR). Not overwhelming.
+
+
 
 
 
