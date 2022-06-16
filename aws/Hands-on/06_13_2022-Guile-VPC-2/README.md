@@ -179,3 +179,27 @@ Target ----> Instance ----> Nat Instance
 
 - Connect to private Instance via bastion host and ping www.google.com to show response.
 
+
+- Note to self:
+
+* sometimes we need to access the instance located in Private Subnet. So we use a proxy server/instance, Bastion Host, for this job.
+
+* A Bastion Host is used to administer EC2 instances using SSH or RDP securely. It is also known as Jump Box.
+
+* We can use NAT Gateways or NAT Instance, which is created in the Public Subnet as a proxy to tackle directly connect to the internet with EC2 which is located in private subnet.
+
+* a NAT instance and NAT Gateways allow your private instances to outbound internet connectivity while blocking internet inbound traffic.
+
+* IMPORTANT:  You cannot use NAT Gateway as a Bastion host. If you connect with SSH or RDP to an instance in a private subnet, you need to configure a Bastion Host. You cannot use NAT Gateway. EC2 ---> OUT OF VPC ---> INTERNET (internet gateway)
+
+* While Bastion Host/Jump Boxes are used for Inbound traffic, NAT Gateway/NAT Instances are used for Outbound traffic. INTERNET (internet gateway) ---> VPC --->  EC2
+
+* The VPC Endpoint is a component that allows you to privately connect your VPC to supported AWS services such as S3.
+
+* A VPC peering is a networking connection between two VPCs. It enables you to route traffic between them using private IPv4 addresses or IPv6 addresses. Instances in different VPC can communicate with each other as if they are within the same network.
+
+* Suppose that you have already had VPC Peering between VPC-A and VPC-B. If you create new VPC peering between VPC-A and VPC-C, connectivity between VPC-B and VPC-C does not occur automatically. You need to create another VPC peering between VPC-B and VPC-C for their connectivity.
+
+* An Elastic IP address is a Static IPv4 Address designed for dynamic cloud computing. In short, Elastic IP is a permanent IP for your instance.
+
+* Elastic IPs are totally free as long as they are being used by an instance. However, Amazon will charge you $0.01/hr for each EIP that you reserve and do not use. So don't forget to terminate the Elastic IP or associated component such as NAT Gateway if you'll not use anymore in the short term.
