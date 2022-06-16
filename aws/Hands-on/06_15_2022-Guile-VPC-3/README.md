@@ -273,10 +273,53 @@ aws s3 cp s3://clarusway-vpc-endpoint/Honda.png .
 **Don't forget to terminate the resources you've created!!!!!!!**
 
 
+- Note to self:
 
+* the main difference between them is that Network ACLs are assigned to Subnets, while Security Groups are assigned to RDS and EC2 Instances.
 
+* Regardless of whether it is default or newly created, Security Groups deny all inbound traffic and allow all outbound traffic until you add rules.
 
+* As you remember, in Default Network ACL, all rules are allowed unlike newly created Network ACL
 
+*  Security Group is instance-based. Instances can associate with more
+than one Security Groups
+
+* NACLs is subnet-based. Subnets can associate with only one
+Network
+
+* There is a hierarchy between the rules in Network ACL. The lowest-numbered rule at the top of the list has privileges.
+
+* While Subnets are subject to the rules of Network ACLs, Instances are subject to the rules of both ACLS and Security Groups
+
+* The purpose of Jump Box is to act as a bridge for the virtual machine in the private subnet and convey the connection to this machine. 
+
+* NAT Gateways use ELASTIC ip, not DYNAMIC IP
+
+* NAT Gateway is created in Public Subnet to provide Private instance a internet connectivity.
+
+* Another reason is "NAT ınstance can be used for Bastion Host". So, thanks to the NAT instance, you can provide both inbound and outbound connectivity. NAT Instances are cheaper than NAT Gateway.
+
+* If we have created a NAT Instance, the first thing to do is change the Source / Destination Check function. If we do not disable this function, NAT Instance will drop the package because the package doesn't belong to Instance that is located in the Private Subnet.
+
+* Since NAT Gateway is not an Internet Gateway, NAT Gateways cannot be accessed from the outside.
+
+* Elastic IP is a kind of static IP.
+
+* Endpoints allow you to make the connection via the network of AWS, not through the internet.
+
+* AWS Site-to-Site VPN enables you to securely connect your on-premises network or branch office site from your Amazon VPC
+
+AWS Client VPN enables you to securely connect AWS or on-premises networks from remote users. AWS Client VPN includes a free client-side application, which provides access to AWS services from remote networks.
+
+* It uses internet protocol security (IPSec) communications to create encrypted VPN tunnels between two locations. Each VPN connection has 2 VPN Tunnels which you can use for high availability.
+
+You can stream primary traffic through the first tunnel and use the second tunnel for redundancy.
+
+* There are two types of VPN; AWS Site-to-Site VPN and AWS Client VPN.
+
+* AWS Site-to-Site VPN  uses internet protocol security (IPSec) communications to create encrypted VPN tunnels between two locations.
+
+* In AWS Site-to-Site VPN,  each VPN connection has …2. VPN Tunnels which you can use them for high availability.
 
 
 
