@@ -237,6 +237,22 @@ from your subnet or gateway is directed.
     It is subnet-based.
     Subnet can associate with only one Network ACL
 
+8. Each region; it comes with one default VPC and we can also create 5 more VPCs for each region. This is a soft limit of 5 and if we need more than 5 VPCs, we can request it from AWS.
+
+9. VPCs are associated with a single region. You cannot span a VPC across regions.
+
+10. The machines we place in the subnets called Private have the opportunity to communicate only through VPC. In this way, we protect our resources against unauthorized access and ensure network security.
+
+11. VPN Gateway :  this internet connection can be made as a direct connection between its own company network infrastructure and this VPC. This system is also called a VPN Gateway.
+
+12. In short, VPC can connect to the outside world in two basic ways, either VPN Gateway or Internet Gateway.
+
+13. Subnet Network ACLs are firewall of subnets. Network ACLs are subnet-based security components. You can associate multiple subnets with a Network ACLs. However, a subnet can be associated with the single Network ACL.
+
+14. A Security Group is a virtual Firewall of Instance. When you launch an instance in a VPC, you can associate with five security groups to one instance.
+
+
+
 
 
 
