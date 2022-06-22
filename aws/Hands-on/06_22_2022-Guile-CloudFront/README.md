@@ -42,7 +42,7 @@
             "Effect": "Allow",
             "Principal": "*",
             "Action": "s3:GetObject",
-            "Resource": "arn:aws:s3:::BUCKET_NAME_HERE/*"
+            "Resource": "arn:aws:s3:::cloudarchitect.click/*"
         }
     ]
 }
