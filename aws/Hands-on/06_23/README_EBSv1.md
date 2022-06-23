@@ -128,3 +128,11 @@ Instances Min: 2
 - Wait for a while and show both the environment and the application is deleted.
 
 
+Note to self:
+
+* It is used for 
+  - deploying and scaling web appöications and services,
+  - seting ap your application architecture,
+  
+* It is kind of orchestration service offered by Amazon Web Services
+
