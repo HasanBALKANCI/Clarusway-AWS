@@ -149,5 +149,8 @@ Note to self:
   - Version deployment
   - Health check
   - Log
-  
+
+* EB has its own CLI (Comand line interface)
+
+* 
 
