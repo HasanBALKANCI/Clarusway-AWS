@@ -133,6 +133,21 @@ Note to self:
 * It is used for 
   - deploying and scaling web appöications and services,
   - seting ap your application architecture,
-  
+
 * It is kind of orchestration service offered by Amazon Web Services
+
+* It is located in Compute Service. It is not servirless.
+
+* Elastic Beanstalk is leke a Platform as a service.
+
+* Why we use it:
+  - Automates the details of capacity provisioning,
+  - Load balancing,
+  - Auto scaling,
+  - Application deployment.
+  - Monitoring
+  - Version deployment
+  - Health check
+  - Log
+  
 
