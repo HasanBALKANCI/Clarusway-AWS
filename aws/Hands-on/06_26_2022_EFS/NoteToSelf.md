@@ -14,4 +14,19 @@ can be attached Amazon EFS file system at the same time.
 
 * Mount target must be created in a subnet in ordet to EC2 connect to EFS.
 
-* 
+* Storage clases
+  - Standard (regional)
+    . EFS Standart
+    . Standart - IA
+  - One Zone
+    . EFS One Zone
+    . EFS One Zone - IA
+
+* Cost Optimized : S3 > EBS >EFS
+ speed : EBS, EFS > S3
+ EC2 mount : S3   NO
+             EBS  SINGLE
+             EFS  MULTIPLE
+
+* STORAGE CAPACITY : S3,EFS = ∞ vs. EBS = 16 TB
+
