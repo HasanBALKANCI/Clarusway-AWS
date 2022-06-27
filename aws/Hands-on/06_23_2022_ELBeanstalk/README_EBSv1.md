@@ -131,14 +131,14 @@ Instances Min: 2
 Note to self:
 
 * It is used for 
-  - deploying and scaling web appöications and services,
-  - seting ap your application architecture,
+  - deploying and scaling web applications and services,
+  - seting up your application architecture,
 
 * It is kind of orchestration service offered by Amazon Web Services
 
 * It is located in Compute Service. It is not servirless.
 
-* Elastic Beanstalk is leke a Platform as a service.
+* Elastic Beanstalk is like a Platform as a service.
 
 * Why we use it:
   - Automates the details of capacity provisioning,
@@ -152,5 +152,18 @@ Note to self:
 
 * EB has its own CLI (Comand line interface)
 
-* 
+* AWS Elastic Beanstalk is an easy-to-use service for deploying and scaling web applications and services developed with Java, .NET, PHP, Node.js, Python, Ruby, Go, and Docker on familiar servers such as Apache, Nginx, Passenger, and IIS.
+
+*  Developers simply upload their application, and Elastic Beanstalk automatically handles the deployment details of capacity provisioning, load balancing, auto-scaling, and application health monitoring.
+
+* AWS Elastic Beanstalk service is free to use. There is no additional charge for AWS Elastic Beanstalk–you pay only for the AWS resources actually used to store and run your application.
+
+* Components of AWS Elastic Beanstalk:
+  - Application
+  - Environment
+  - Environment Tier
+  - Environment Configuration
+  - Saved Configuration
+  - Platform
+  - 
 
