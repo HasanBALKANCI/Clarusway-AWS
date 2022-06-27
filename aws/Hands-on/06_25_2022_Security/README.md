@@ -444,7 +444,29 @@ done
 
 - Delete BOTH EC2 Instances
 
+Note to self:
 
+* AWS Lambda is a serverless compute service that runs your code in response to events and automatically manages the underlying computing resources for you.
+
+* AWS Lambda lets you run code without provisioning or managing servers.
+
+* when you prefer to run your code in EC2 instance you will be charged as long as your instance is running even if your code runs or not.
+
+* You are charged based on the number of requests for your functions and the duration, the time it takes for your code to execute.
+
+* API stands for Application Program Interface.
+
+* Basically, the API defines how device components can communicate with each other.
+
+* The API Gateway is responsible for routing, design, and interface transfer requests.
+
+* Amazon API Gateway is an AWS service for creating, publishing, maintaining, monitoring, and securing REST, HTTP, and WebSocket APIs at any scale.
+
+* APIs act as the "front door" for applications to access data, business logic, or functionality from your backend services.
+
+* you are able to create a fully automated environment with Lambda and API Gateway combination.
+
+* 
 
 
 
