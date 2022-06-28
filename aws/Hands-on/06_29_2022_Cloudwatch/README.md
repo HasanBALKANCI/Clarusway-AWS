@@ -540,5 +540,13 @@ sudo systemctl start awslogsd
 - ıf you get any problem try to restart instance .
 
 
+NoteToSelf:
+
+* monitoring service
+
+* You can get logs, set alarms, trigger events and analyze utilization by CloudWatch
+
+* 
+
 
 
