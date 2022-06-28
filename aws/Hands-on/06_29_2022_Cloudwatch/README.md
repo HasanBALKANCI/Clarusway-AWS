@@ -92,7 +92,7 @@ STEP 2: Upload Stress tool on EC2
 
 - Upload Stress tool and run it
 
-```bash
+```bash # stress
 sudo amazon-linux-extras install epel -y
 sudo yum install -y stress
 stress --cpu 80 --timeout 20000   #(optionally using 3000 for timeout)
@@ -546,7 +546,20 @@ NoteToSelf:
 
 * You can get logs, set alarms, trigger events and analyze utilization by CloudWatch
 
-* 
+* Coolect; Monitor, Alarm
 
+* Basic Components
+  - Metrics: measurable data about your resources, apps or services or number of objectsin an S3 bucket
+  
+  - Dashboards: It enable you to create graphs and visualize your cloud resources and applications according to your needs.
+
+  - Alarms: Alarms enables you to monitor CloudWatch metrics and to receive notifications if the metrics fall outside of the thresholds (higher or lower)
+that you set. You can Alarms trigger a Resource Actions.
+
+  - Logs: Logs let you monitor, store, and access your log files from AWS or other resources. It also allows you to centraliza these logs.
+
+  - Events: An event indicates changes in your AWS environment. It can be used in new service named "Amazon EventBridge" also.
+
+  - 
 
 
