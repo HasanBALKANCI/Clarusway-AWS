@@ -106,3 +106,22 @@
 - Click on the log stream and show the message sent from sqs and processed by lambda.
 
 - Delete/terminate the resources created.
+
+NoteToSelf:
+
+* SQS is a fully managed message quering service thah enables you to DECOUPLE and scale microservices, distrubuted systems, and serverless applications.
+
+* Standart Queue 
+  - Hihg Throughput
+  - unlimited transaction per seconds (TPS)
+  - At-Least-Once Delivery
+  - Mesajlar geldigi sirayla islem gormeyeblir
+  - En az bir defa islem gorur
+
+* FIFO Queue
+  - Sadece bir kere islem görur
+  - sira kesinlikle korunur
+  - daha pahali
+  - 
+
+* 
