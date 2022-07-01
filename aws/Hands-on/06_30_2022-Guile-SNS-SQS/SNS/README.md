@@ -115,3 +115,11 @@
 - Show the topics and the messages sent from SNS.
 
 - Delete/terminate the resources created.
+
+NoteToSelf:
+
+* simple notification service
+
+* it provides message delivery from publishers to subscribes.
+
+* 
