@@ -468,7 +468,56 @@ Note to self:
 
 AWS Security Note To Self:
 
+* Defense-in-depth, various security tools and what purpose they serve, 
+explain AWS security tooling and how it supports defense-in-depth
+
+* DevSecOps --> It s a new concept that integratetd with DevOps and Security
+
+* CIA Principles:
+  - Confidentiality
+    Prevent unauthirized access to informatioon
+  - Integraty
+    Ensure data has not been tampered with
+  - Availability
+
+* Defense-in-Depth:
+  - Best practice for information security
+  - Layared approach
+  - No silver bullet at any layer
+
+* Security Solutions
+  - Encryption
+  - Serverside (AT rest), in-transit
+  - Firewall
+    inbound and outband control.
+    Ip, port and protocol
+    Packet inspection
+    Anti-virus modules
+    Known bad IPs and domains
+
+* WAF (Web Application Firewall)
+  - Layer 7, HTTP trafic
+  - cross-site request forgery
+  - Cross Site Scripting (XSS)
+  - SQL Injection
+  - DDOS Attack
+
+* Host-Based Firewall
+  - installed on a host to monitor and control incoming and outgoing network traffiv
+  - Operates at layers 3&4 of the OSI model i.e. IP,port and protocol
+  - WIndows Defender, IPTables
+
+* Intrusion Detection and Prevention
+  - Intrusion Detection System (IDS) monitor and analyze network trafic.
+  - Instrusion Prevent System (IPS) go one step further and block trafic that pose such threats
+  - Typically use 4 types of algorithm:
+     signature-based detection
+     anomaly-based detection
+     stateful protocol analysis
+     reputation analysis
+
 * 
+    
 
 
 
