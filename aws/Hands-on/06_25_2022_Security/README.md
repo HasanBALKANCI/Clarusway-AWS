@@ -466,6 +466,8 @@ Note to self:
 
 * you are able to create a fully automated environment with Lambda and API Gateway combination.
 
+AWS Security Note To Self:
+
 * 
 
 
