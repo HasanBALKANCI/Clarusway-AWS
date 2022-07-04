@@ -4,12 +4,12 @@ apt-get install git -y
 apt-get install python3 -y
 cd /home/ubuntu/
 TOKEN=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-git clone https://github.com/HasanBALKANCI/private-my-projects.git
-cd /home/ubuntu/https://github.com/HasanBALKANCI/private-my-projects.git
+git clone https://$TOKEN@<YOUR GITHUB REPO URL>
+cd /home/ubuntu/<YOUR GITHUB REPO NAME>
 apt install python3-pip -y
 apt-get install python3.7-dev libmysqlclient-dev -y
 pip3 install -r requirements.txt
-cd /home/ubuntu/https://github.com/HasanBALKANCI/private-my-projects/src
+cd /home/ubuntu/<YOUR GITHUB REPO NAME>/src
 python3 manage.py collectstatic --noinput
 python3 manage.py makemigrations
 python3 manage.py migrate
