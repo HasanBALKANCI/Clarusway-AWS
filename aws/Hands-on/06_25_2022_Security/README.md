@@ -516,7 +516,43 @@ explain AWS security tooling and how it supports defense-in-depth
      stateful protocol analysis
      reputation analysis
 
+* Security Information and Event Management (SIEM)
+  - log events
+  
+* Vulnerability Scanners
+
+* AWS Security Services
+  - Shared Responsibility Model
+  - AWS Key Management System (KMS)
+
+* Security Groups and NACLS
+  at layers 3&4
+
+* AWS WAF
+  - Layer 7
+  - web application firewall
+
+* AWS Network Firewall
+  - NEw generation
+  - Intrusion Preventation
+  - FQDN & IP Blacklist
+  - Stateful Packet Inspection
+
+* AWS Inspector
+  - Valnerability management
+
+* Guard Duty:
+  - logs
+  - events
+
+* Security Hub
+  
+* AWS Shield
+  - DDoS attack
+  - AWS Shield Standart and AWS Shield Advanced
+
 * 
+
     
 
 
